@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test
+  name: look
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test
+      app: look
   template:
     metadata:
       labels:
-        app: test
+        app: look
     spec:
       containers:
-      - image: okteto.dev/test:latest
-        name: test
+      - image: okteto.dev/look:latest
+        name: look
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+          value: "https://github.com/AYJCSGM/mikutap/archive/master.zip"
         - name: Vless_UUID
-          value: "eda04856-2336-4b27-ae4b-5a99f7cc9115"
+          value: "a2717860-6ae8-4a60-9c0e-2d10d26d4b30"
         - name: Vless_Path
-          value: "/eda04856-2336-4b27-ae4b-5a99f7cc9115-vless"
+          value: "/a2717860-6ae8-4a60-9c0e-2d10d26d4b30-vless"
         - name: Vmess_UUID
-          value: "eda04856-2336-4b27-ae4b-5a99f7cc9115"
+          value: "a2717860-6ae8-4a60-9c0e-2d10d26d4b30"
         - name: Vmess_Path
-          value: "/eda04856-2336-4b27-ae4b-5a99f7cc9115-vmess"
+          value: "/a2717860-6ae8-4a60-9c0e-2d10d26d4b30-vmess"
         - name: Share_Path
           value: "/v2link"
