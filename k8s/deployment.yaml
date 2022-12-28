@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/AYJCSGM/mikutap/archive/master.zip"
+          value: "https://github.com/wulabing/3DCEList/archive/master.zip"
         - name: Vless_UUID
           value: "a2717860-6ae8-4a60-9c0e-2d10d26d4b30"
         - name: Vless_Path
